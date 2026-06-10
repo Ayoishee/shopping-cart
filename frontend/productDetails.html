@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart - Product Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">ShopCart</h1>
+            <div class="nav-links">
+                <a href="categories.html" class="nav-link">Back to Products</a>
+                <a href="cart.html" class="nav-link">Cart <span id="cartCount" class="cart-badge">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container product-detail-container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img id="productImage" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1 id="productName"></h1>
+                <p id="productDescription"></p>
+                <div class="product-meta">
+                    <p><strong>Price:</strong> $<span id="productPrice"></span></p>
+                    <p><strong>Category:</strong> <span id="productCategory"></span></p>
+                    <p><strong>Stock:</strong> <span id="productStock"></span></p>
+                </div>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+                <button id="addToCartBtn" class="btn btn-primary btn-large">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

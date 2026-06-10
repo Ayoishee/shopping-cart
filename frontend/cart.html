@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart - Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">ShopCart</h1>
+            <div class="nav-links">
+                <a href="categories.html" class="nav-link">Continue Shopping</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container cart-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-content" id="cartContent">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <p>Tax (10%): $<span id="tax">0.00</span></p>
+            <h4>Total: $<span id="total">0.00</span></h4>
+            <button id="checkoutBtn" class="btn btn-primary btn-large">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
